@@ -43,7 +43,7 @@ class NewsTile extends StatelessWidget {
                   },
                   child: CachedNetworkImage(
                     cacheManager: customCacheManager,
-                    imageUrl: articleModel.image ?? "https://btckstorage.blob.core.windows.net/site10666/News.jpg",
+                    imageUrl: articleModel.image!,
                     placeholder: (context, url) =>
                         const Center(child: CircularProgressIndicator()),
                     errorWidget: (context, url, error) =>
